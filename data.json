@@ -1,0 +1,90 @@
+{
+  "severity": "confirmed",
+  "financialValue": 9600,
+  "durationInSeconds": 12,
+  "rules": ["Large Withdrawal After High Inbound Velocity"],
+  "eventType": "reviewedalert_v_3_11",
+  "modelOutputs": [
+    {
+      "score": 0.91,
+      "modelId": "Anti Money Laundering"
+    }
+  ],
+  "tags": ["_tag:Large Withdrawal", "_tag:Excessive Cash Out"],
+  "score": 0.91,
+  "riskReasons": "Large Withdrawal After High Inbound Velocity, Money Laundering is suspected",
+  "comment": "suspicious activity",
+  "reviewStatus": "risk",
+  "originatingEvent": {
+    "eventId": "Tommy_Garcia11",
+    "amount": {
+      "currency": "GBP",
+      "value": 9600
+    },
+    "schemaVersion": 1,
+    "method": "In Branch",
+    "eventType": "withdrawal",
+    "transactionId": "Tommy_Garcia11",
+    "accountId": "C21786BD43G8A23B",
+    "countryCode": "GB",
+    "eventTime": "2018-11-12T15:12:00.000Z",
+    "tenantId": "Bank_1",
+    "customerId": "Tommy Garcia",
+    "details": "In Branch Withdrawal: Jersey City Branch",
+    "_metadata": {
+      "eventId": "Tommy_Garcia11",
+      "execution": {
+        "expectResponse": true
+      },
+      "financialValue": 9600,
+      "systemEventId": "Tommy_Garcia11",
+      "entities": {
+        "account": ["C21786BD43G8A23B"],
+        "customer": ["Tommy Garcia"]
+      },
+      "receivedTime": "2020-11-13T11:27:03.871Z",
+      "eventTime": "2018-11-12T15:12:00.000Z",
+      "deduplicationOff": true,
+      "eventType": "withdrawal",
+      "searchable": {
+        "eventId": "Tommy_Garcia11",
+        "amount": {
+          "currency": "GBP",
+          "value": 9600
+        },
+        "schemaVersion": 1,
+        "method": "In Branch",
+        "rules": ["Large Withdrawal After High Inbound Velocity"],
+        "eventType": "withdrawal",
+        "transactionId": "Tommy_Garcia11",
+        "tags": ["Large Withdrawal", "Excessive Cash Out"],
+        "accountId": "C21786BD43G8A23B",
+        "alert": true,
+        "countryCode": "GB",
+        "eventTime": "2018-11-12T15:12:00.000Z",
+        "tenantId": "Bank_1",
+        "customerId": "Tommy Garcia",
+        "details": "In Branch Withdrawal: Jersey City Branch",
+        "account": {
+          "accountNumber": "87654321",
+          "sortCode": "11-12-13"
+        }
+      }
+    },
+    "account": {
+      "accountNumber": "87654321",
+      "sortCode": "11-12-13"
+    }
+  },
+  "attributeReviews": [],
+  "incidentListId": "5fae6d9dc50313086d80de0f",
+  "originalEventType": "withdrawal",
+  "user": "tommy-roberts",
+  "entity": {
+    "id": "Tommy Garcia",
+    "type": "customer",
+    "tenant": "DEFAULT_TENANT"
+  },
+  "timestamp": "2020-11-16T14:04:53.009Z",
+  "customReview": {}
+}
